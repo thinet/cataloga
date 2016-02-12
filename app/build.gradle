@@ -29,6 +29,7 @@ android {
         versionName "1.0"
     }
     buildTypes {
+
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
@@ -42,4 +43,6 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.1.1'
     apt "org.androidannotations:androidannotations:$AAVersion"
     compile "org.androidannotations:androidannotations-api:$AAVersion"
+    compile 'com.squareup.retrofit2:retrofit:2.0.0-beta4'
+    compile 'com.squareup.retrofit:converter-gson:2.0.0-beta2'
 }
