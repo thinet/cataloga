@@ -1,0 +1,40 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <net.i2p.android.ext.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/fabMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        fab:fab_addButtonColorNormal="?attr/colorAccent"
+        fab:fab_addButtonColorPressed="?attr/colorControlActivated"
+        fab:fab_labelsPosition="left"
+        tools:showIn="@layout/fragment_list_books">
+
+        <net.i2p.android.ext.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/green500"
+            fab:fab_colorPressed="@color/green700"
+            fab:fab_icon="@drawable/ic_create_white_18dp"
+            fab:fab_size="mini"
+            fab:fab_title="Label on the right" />
+
+        <net.i2p.android.ext.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabMid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/orange500"
+            fab:fab_colorPressed="@color/orange700"
+            fab:fab_icon="@drawable/ic_barcode_white_18dp"
+            fab:fab_size="mini"
+            fab:fab_title="Another one on the right" />
+
+    </net.i2p.android.ext.floatingactionbutton.FloatingActionsMenu>
+</merge>
