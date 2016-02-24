@@ -23,7 +23,7 @@ android {
 
     defaultConfig {
         applicationId "br.com.trama.cataloga"
-        minSdkVersion 10
+        minSdkVersion 11
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
