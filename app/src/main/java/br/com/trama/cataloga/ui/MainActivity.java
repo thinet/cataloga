@@ -1,5 +1,7 @@
 package br.com.trama.cataloga.ui;
 
+import android.os.Bundle;
+import android.os.PersistableBundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -18,6 +20,12 @@ public class MainActivity extends AppCompatActivity{
 
     @ViewById
     Toolbar toolbar;
+
+    @Override
+    public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
+        setTheme(R.style.AppTheme);
+        super.onCreate(savedInstanceState, persistentState);
+    }
 
     @AfterViews
     void init(){
